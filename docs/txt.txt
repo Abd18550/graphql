@@ -1,0 +1,11 @@
+const auditQuery = `
+    query ($userId: Int!) {
+      user(
+        where: { auditorId: { _eq: $userId } }
+      ) {
+        auditRatio
+        totalUp
+        totalDown
+      }
+    }
+  `;
