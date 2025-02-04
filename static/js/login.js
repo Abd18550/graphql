@@ -1,7 +1,7 @@
 // Handle form submission
 const token = localStorage.getItem("jwtToken");
 if (token !== null) {
-  window.location.href = '../../templetes/profile.html';
+  window.location.href = '../../docs/profile.html';
 }else{
 document.getElementById("loginForm").addEventListener("submit", async (event) => {
   event.preventDefault(); // Prevent page reload
@@ -31,7 +31,7 @@ document.getElementById("loginForm").addEventListener("submit", async (event) =>
       
 
       // Redirect user to profile page
-      window.location.href = '../../templetes/profile.html';
+      window.location.href = '../../docs/profile.html';
     } else {
       // Handle invalid credentials
       document.getElementById("errorMessage").textContent = "Invalid credentials. Please try again.";
