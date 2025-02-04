@@ -1,6 +1,6 @@
 document.getElementById("logoutButton").addEventListener("click", () => {
   localStorage.removeItem("jwtToken");
-  window.location.href = "login.html";
+  window.location.href = "index.html";
 });
 // Fetch user data (userId and username ....)
 const fetchUserData = async () => {
@@ -11,7 +11,7 @@ const fetchUserData = async () => {
         <div class="notlogin">
           <h1 class="welcome">Welcome to Adam Users Graph</h1>
           <p class="teeext">You must log in to see your profile</p>
-          <a href="login.html" class="blogin">Log in</a>
+          <a href="index.html" class="blogin">Log in</a>
         </div>
       `;
       return;
