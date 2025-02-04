@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Profile Page</title>
+  <link rel="stylesheet" href="../static/css/profilestyle.css">
+</head>
+<body>
+  <header>
+    <h1>Welcome to Your Profile</h1>
+    <button id="logoutButton">Log Out</button>
+  </header>
+  
+  <div class="container">
+    <!-- User Info Section -->
+    <div class="info-container">
+        <div class="info">
+          <h2>User Information</h2>
+          <!-- <p><strong>ID:</strong> <span id="userId">Loading...</span></p> -->
+          <p><strong>Username:</strong> <span id="username">Loading...</span></p>
+          <a href="userInfo.html">See more</a>
+        </div>
+        <div class="info">
+          <h2>XP Information</h2>
+          <p><strong>Total XP:</strong> <span id="xpAmount">Loading...</span></p>
+          <a href="xpInfo.html">See more</a>
+        </div>
+        <div class="info">
+          <h2>Audits</h2>
+          <p>You can open the audit list to see more</p>
+          
+          <a href="audit.html">See more</a>
+        </div>
+    </div>
+      
+
+    <!-- Logout Button -->
+
+    <!-- Statistics Section -->
+    <div class="graphs">
+      <h2>Your Statistics</h2>
+      <div id="graph1" class="graph1">
+        <h3>XP Over Time</h3>
+      
+        <!-- XP Range Slider -->
+        <div class="xp-range">
+          <label for="xpRange">XP Range:</label>
+          <input type="range" id="xpRange" min="0" max="100000" step="5000" value="5000">
+          <span id="xpRangeValue">5000</span>
+        </div>
+      
+        <svg id="xpGraph" width="1000" height="600"></svg>
+      </div>
+      
+      
+      
+      
+      <div id="graph2" class="graph2">
+        <svg id="auditGraph" width="400" height="300"></svg>
+      </div>
+      
+    </div>
+  </div>
+
+  <script src="../static/js/profile.js"></script>
+</body>
+</html>

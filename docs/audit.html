@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Profile Page</title>
+  <link rel="stylesheet" href="../static/css/profilestyle.css">
+</head>
+<body>
+  <header>
+    <h1>Welcome to Your Profile</h1>
+    <button id="logoutButton">Log Out</button>
+  </header>
+  
+  <div class="container">
+    <a href="profile.html" class="backToProfile">Back to profile</a>
+    <div id="graph2" class="info">
+      <h3>Audits Did/Missed</h3>
+      <svg id="auditGraph" width="400" height="200"></svg>
+    </div>
+    <div class="tranHistory">
+        <h2>Audits</h2>
+        <div id="AuditsList" class="graphs"></div>
+    </div>
+      
+  <script src="../static/js/audit.js"></script>
+</body>
+</html>
